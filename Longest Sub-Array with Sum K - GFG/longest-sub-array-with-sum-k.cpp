@@ -18,7 +18,7 @@ class Solution{
             if(sum==K){
                 len=max(len,i+1);
             }
-            else if(mp.find(sum-K)!=mp.end()){
+            if(mp.find(sum-K)!=mp.end()){
                 len=max(len,i-mp[sum-K]);
             }
             if (mp.find(sum)==mp.end())mp[sum]=i;
