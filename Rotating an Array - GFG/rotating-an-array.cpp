@@ -13,10 +13,11 @@ public:
         // code here
         
         
-        
+         
         reverse(nums,nums+d);
         reverse(nums+d,nums+n);
         reverse(nums,nums+n);
+       
     }
 };
 
