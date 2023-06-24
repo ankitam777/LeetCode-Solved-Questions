@@ -7,7 +7,7 @@ class Solution {
   public:
     string removeOuter(string& s) {
         // code here
-         stack<int>st;
+        stack<int>st;
         string ans;
         for(int i=0;i<s.size();i++){
             if(s[i]=='('){
