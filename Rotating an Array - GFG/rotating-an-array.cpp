@@ -11,13 +11,10 @@ class Solution{
 public:
     void leftRotate(int nums[], int n, int d) {
         // code here
-        
-        
-         
+        d=d%n;
         reverse(nums,nums+d);
         reverse(nums+d,nums+n);
         reverse(nums,nums+n);
-       
     }
 };
 
