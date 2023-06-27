@@ -53,7 +53,7 @@ class Solution
         Node* head=NULL;
         for(auto i:s){
             Node* newnode=new Node(i);
-            if(curr==NULL){
+            if(head==NULL){
                 head=newnode;
                 curr=head;
             }
