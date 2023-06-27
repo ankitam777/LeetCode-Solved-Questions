@@ -12,8 +12,8 @@ class Solution{
     long long maxSubarraySum(int nums[], int n){
         
         // Your code here
-        int maxi=INT_MIN;
-        int sum=0;
+        long long maxi=INT_MIN;
+        long long sum=0;
         for(int i=0;i<n;i++){
             sum+=nums[i];
             maxi=max(maxi,sum);
