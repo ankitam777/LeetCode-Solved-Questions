@@ -50,7 +50,7 @@ class Solution
             head2=head2->next;
         }
         Node* curr=NULL;
-        Node* head;
+        Node* head=NULL;
         for(auto i:s){
             Node* newnode=new Node(i);
             if(curr==NULL){
