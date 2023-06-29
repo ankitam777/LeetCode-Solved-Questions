@@ -52,22 +52,22 @@ class Solution {
   public:
     Node* constructLL(vector<int>& arr) {
         // code here
-        Node* head=new Node();
+        Node* head=NULL;
         Node* temp=head;
-        head=0;
         for(int i=0;i<arr.size();i++){
-            Node* newnode=new Node(arr[i]);
-            if(head==0){
-                head=temp=newnode;
-            }
-            else{
-                temp->next=newnode;
-                temp=newnode;
-            }
+        Node* newnode=new Node(arr[i]);
+        
+        if(head==NULL){
+            head=newnode;
+            temp=newnode;
         }
+        else{
+            temp->next=newnode;
+            temp=newnode;
+        }
+        }
+        
         return head;
-    
-
     }
 };
 
