@@ -40,6 +40,12 @@ class Solution{
     Node *insertAtBegining(Node *head, int x) {
        // Your code here
        Node* newnode=new Node(x);
+       Node* temp=head;
+       if(head==NULL){
+           head=newnode;
+           temp=newnode;
+           return head;
+       }
        newnode->next=head;
        head=newnode;
        return head;
