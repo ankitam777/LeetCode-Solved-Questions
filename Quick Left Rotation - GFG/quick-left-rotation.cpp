@@ -3,17 +3,18 @@
 using namespace std;
 
 // } Driver Code Ends
+
 class Solution{
 	
 	
 	public:
-	void leftRotate(int arr[], int k, int n) 
+	void leftRotate(int nums[], int d, int n) 
 	{ 
-	    k=k%n;
 	   // Your code goes here
-	    reverse(arr,arr+k);
-        reverse(arr+k,arr+n);
-        reverse(arr,arr+n);
+	   d=d%n;
+	    reverse(nums,nums+d);
+        reverse(nums+d,nums+n);
+        reverse(nums,nums+n);
 	} 
 		 
 
