@@ -29,15 +29,15 @@ class Solution
     public:
     //Function to count nodes of a linked list.
     int getCount(struct Node* head){
-         int count=1;
-        //Code here
-        Node* temp=head;
-        while(temp->next!=NULL){
-            temp=temp->next;
-            count++;
-        }
-        return count;
     
+        //Code here
+        int cnt=0;
+        struct Node* temp=head;
+        while(temp!=NULL){
+            temp=temp->next;
+            cnt++;
+        }
+    return cnt;
     }
 };
     
